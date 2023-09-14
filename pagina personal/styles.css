@@ -1,0 +1,44 @@
+.body-index {
+    background-image: url(media/img/mi_casa_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.body-arte {
+    background-image: url(media/img/arte.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.animacion-h1 {
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+@keyframes animH1 {
+    0% {
+        transform: scale(1); 
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2); 
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1; 
+    }
+}
+
+.animacion-h1 {
+    animation: animH1 4s linear infinite;
+}
+
+.contorno {
+    text-shadow:
+        -1px -1px 0 #000000, /* alch esto si se lo pedi al chatgpt */
+        1px -1px 0 #000000, 
+        -1px 1px 0 #000000, 
+        1px 1px 0 #000000; 
+}
