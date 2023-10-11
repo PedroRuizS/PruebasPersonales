@@ -6,7 +6,6 @@ import pynput
 #################### DIRECT X KEY CODES #####################
 #############################################################
 
-# Key Codes found at: https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-6.0/aa299374(v=vs.60)
 Q = 0x10
 W = 0x11
 E = 0x12
@@ -118,8 +117,7 @@ MOUSE_WHEEL_DOWN = 0x109
 ################## DIRECT INPUT FUNCTIONS ###################
 #############################################################
 
-# Direct Input functions found at: https://stackoverflow.com/questions/53643273/how-to-keep-pynput-and-ctypes-from-clashing
-# Use these to prevent conflict errors with pynput.
+
 SendInput = ctypes.windll.user32.SendInput
 
 def HoldKey(hexKeyCode):
@@ -136,7 +134,6 @@ def ReleaseKey(hexKeyCode):
     x = pynput._util.win32.INPUT(ctypes.c_ulong(1), ii_)
     SendInput(1, ctypes.pointer(x), ctypes.sizeof(x))
 
-# Holds down a key for the specified number of seconds
 def HoldAndReleaseKey(hexKeyCode, seconds):
     HoldKey(hexKeyCode)
     time.sleep(seconds)

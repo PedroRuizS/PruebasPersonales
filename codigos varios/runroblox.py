@@ -16,7 +16,6 @@ if inicio == "ya":
         countdown -= 1
         time.sleep(1)
     while True:
-        HoldKey(SPACE)
-        HoldAndReleaseKey(W, .5)
+        HoldKey(W)
+        
         time.sleep(5)
-

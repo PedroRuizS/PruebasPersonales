@@ -1,14 +1,14 @@
 .body-index {
     background-image: url(media/img/mi_casa_1.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     color: white;
 }
 .body-arte {
     background-image: url(media/img/arte.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+    background-repeat: repeat;
+    color: rgb(237, 18, 18);
 }
 .animacion-h1 {
     text-align: center;
@@ -41,4 +41,48 @@
         1px -1px 0 #000000, 
         -1px 1px 0 #000000, 
         1px 1px 0 #000000; 
+}
+.pintor {
+margin-left: 100px;    
+margin-top: 350px;
+transition: all 0.3s;
+
+}
+.pintor:hover{
+    margin-left: 125px;
+
+}
+.pintura1{
+    height: 462px;
+    width: 462px;
+    margin-left: 95px;
+    margin-top: 10px;
+}
+.pinturas{
+    height: 462px;
+    width: 462px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.titulo-arte{
+    font-family: cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 100px;
+    background-image: url(media/img/madera.webp);
+
+}
+.boton-sig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 100px;
+    font-weight: bolder;
+    font-style: oblique;
+    background-image: url(media/img/madera.webp);
+    cursor: pointer;
+    width: 150px; 
+    height: 50px;
+    text-size-adjust: 150px;
 }
