@@ -1,0 +1,20 @@
+from PIL import Image, ImageDraw
+
+# read ascii text from file
+text_fp = "./ascii cosas lindas.txt"
+with open(text_fp, 'r') as f:
+    ascii_text = f.read()
+
+# Create a new Image
+# make sure the dimensions (W and H) are big enough for the ascii art
+W, H = (3000,3000)
+im = Image.new("RGBA",(W,H),"white")
+
+# Draw text to image
+draw = ImageDraw.Draw(im)
+w, h = draw.textsize(ascii_text)
+# draws the text in the center of the image
+draw.text(((W-w)/2,(H-h)/2), ascii_text, fill="black")
+
+# Save Image
+im.save("final.png", "PNG")

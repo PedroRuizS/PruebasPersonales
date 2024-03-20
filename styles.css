@@ -4,30 +4,31 @@
     background-repeat: repeat-y;
     color: white;
 }
+
 .body-arte {
     background-image: url(media/img/arte.png);
     background-size: cover;
     background-repeat: repeat;
     color: rgb(237, 18, 18);
 }
+
 .animacion-h1 {
     text-align: center;
     color: #ffffff;
-    
 }
 
 @keyframes animH1 {
     0% {
-        transform: scale(1); 
+        transform: scale(1);
         opacity: 1;
     }
     50% {
-        transform: scale(2); 
-        opacity: 1; 
+        transform: scale(2);
+        opacity: 1;
     }
     100% {
         transform: scale(1);
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
@@ -37,52 +38,55 @@
 
 .contorno {
     text-shadow:
-        -1px -1px 0 #000000, /* alch esto si se lo pedi al chatgpt */
-        1px -1px 0 #000000, 
-        -1px 1px 0 #000000, 
-        1px 1px 0 #000000; 
+        -0.05208333333em -0.04629629629em 0 #000000,
+        0.05208333333em -0.04629629629em 0 #000000,
+        -0.05208333333em 0.04629629629em 0 #000000,
+        0.05208333333em 0.04629629629em 0 #000000;
 }
+
 .pintor {
-margin-left: 100px;    
-margin-top: 350px;
-transition: all 0.3s;
+    margin-left: 5.208333333%;
+    margin-top: 18.51851852%;
+    transition: all 0.3s;
+}
 
+.pintor:hover {
+    margin-left: 6.510416667%;
 }
-.pintor:hover{
-    margin-left: 125px;
 
+.pintura1 {
+    height: 24.0625%;
+    width: 24.0625%;
+    margin-left: 4.947916667%;
+    margin-top: 0.52083333333%;
 }
-.pintura1{
-    height: 462px;
-    width: 462px;
-    margin-left: 95px;
-    margin-top: 10px;
+
+.pinturas {
+    height: 24.0625%;
+    width: 24.0625%;
+    margin-left: 7.8125%;
+    margin-top: 0.52083333333%;
 }
-.pinturas{
-    height: 462px;
-    width: 462px;
-    margin-left: 150px;
-    margin-top: 10px;
-}
-.titulo-arte{
+
+.titulo-arte {
     font-family: cursive;
     text-align: center;
     font-weight: bolder;
     font-style: oblique;
-    font-size: 100px;
+    font-size: 5.208333333%;
     background-image: url(media/img/madera.webp);
-
 }
-.boton-sig{
+
+.boton-sig {
     display: flex;
     justify-content: center;
     align-items: center;
-    size: 100px;
+    font-size: 5.208333333%;
     font-weight: bolder;
     font-style: oblique;
     background-image: url(media/img/madera.webp);
     cursor: pointer;
-    width: 150px; 
-    height: 50px;
-    text-size-adjust: 150px;
+    width: 7.8125%;
+    height: 2.604166667%;
+    text-size-adjust: 7.8125%;
 }
