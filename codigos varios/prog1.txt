@@ -1,0 +1,9 @@
+ADDI a1, a0, 0 
+ADDI a2, a0, 0
+% bucle
+BGE a2, 5, fin_bucle
+ADDI a1, a1, 1 
+ADDI a2, a2, 1
+J bucle
+% fin_bucle
+END
